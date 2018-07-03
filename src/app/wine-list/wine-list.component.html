@@ -1,6 +1,6 @@
-<input type="text" id="searchTextId" [(ngModel)]="searchText" name="searchText" placeholder="Search By Name">
-<table class="table" *ngIf="wines">
-  <thead>
+<input type="text" class="float-right" id="searchTextId" [(ngModel)]="searchText" name="searchText" placeholder="Search">
+<table class="table table-striped table-light" *ngIf="wines">
+  <thead class="thead-dark">
     <tr>
       <th scope="col" (click)="sortBy('id')">#</th>
       <th scope="col" (click)="sortBy('name')">Name</th>

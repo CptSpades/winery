@@ -1,9 +1,16 @@
 @import "../styles.scss";
 
 .main-content {
-    padding-top: 7vh;
     background: url(../assets/bg.jpg) no-repeat center center fixed; 
     height: 100%;
     min-height: 100%;
+}
+
+.nav-bar {
+    background: #555555;
+}
+
+.content-card {
+    //background-color: white;
 }
 
