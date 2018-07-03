@@ -20,6 +20,6 @@ export class WineApiService {
   }
 
   postWine(newWine) {
-    return this.http.post(this.api + 'wines', newWine );
+    return this.http.post(this.api + 'wines', newWine).subscribe(res => console.log(res));
   }
 }

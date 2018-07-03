@@ -1,22 +1,22 @@
 <div class="detail-content">
 <h2>Add new wine</h2>
-<form>
+<form [formGroup]="wineForm" (ngSubmit)="submitWine()">
   <div class="form-group">
     <label for="wineName">Name</label>
-    <input type="text" class="form-control" id="wineName" placeholder="Wine Name">
+    <input type="text" class="form-control" id="wineName" placeholder="Wine Name" formControlName="name">
   </div>
   <div class="form-group">
       <label for="wineVineyard">vineyard</label>
-      <input type="text" class="form-control" id="wineVineyard" placeholder="Vineyard">
+      <input type="text" class="form-control" id="wineVineyard" placeholder="Vineyard" formControlName="vineyard">
   </div>    
   <div class="form-group">
       <label for="wineYear">Year</label>
-      <input type="text" class="form-control" id="wineYear" placeholder="Year">
+      <input type="text" class="form-control" id="wineYear" placeholder="Year" formControlName="year">
   </div>
   <div class="form-group">
       <label for="wineDescription">Description</label>
-      <textarea class="form-control" id="wineDescription" rows="3"></textarea>
+      <textarea class="form-control" id="wineDescription" rows="3" formControlName="description"></textarea>
   </div>
-  <button type="button" class="button">Submit</button>
+  <button type="submit" class="button">Submit</button>
 </form>
 </div>
