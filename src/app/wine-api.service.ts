@@ -18,4 +18,8 @@ export class WineApiService {
   getWine(id) {
     return this.http.get( this.api + 'wines/' + id);
   }
+
+  postWine(newWine) {
+    return this.http.post(this.api + 'wines', newWine );
+  }
 }
