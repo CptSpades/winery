@@ -2,10 +2,10 @@
 <table class="table" *ngIf="wines">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Vineyard</th>
-      <th scope="col">Year</th>
+      <th scope="col" (click)="sortBy('id')">#</th>
+      <th scope="col" (click)="sortBy('name')">Name</th>
+      <th scope="col" (click)="sortBy('vineyard')">Vineyard</th>
+      <th scope="col" (click)="sortBy('year')">Year</th>
     </tr>
   </thead>
   <tbody>

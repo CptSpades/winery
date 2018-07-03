@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WineApiService } from '../wine-api.service';
+import { Wine } from '../classes/wine';
 
 @Component({
   selector: 'app-wine-list',
@@ -8,7 +9,7 @@ import { WineApiService } from '../wine-api.service';
 })
 export class WineListComponent implements OnInit {
 
-  public wines;
+  public wines = [];
 
   searchText = '';
 
@@ -18,8 +19,10 @@ export class WineListComponent implements OnInit {
     this.getWine();
   }
 
-  onSelect(wine) {
-    console.log(wine);
+  sortBy(column) {
+    if (this.wines) {
+      this.wines.sort((win1, win2) => win1[column] !== win2[column] ? win1[column] < win2[column] ? -1 : 1 : 0);
+    }
   }
 
   getWine() {

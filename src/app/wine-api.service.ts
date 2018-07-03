@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+import { Wine } from './classes/wine';
+
 @Injectable({
   providedIn: 'root'
 })
