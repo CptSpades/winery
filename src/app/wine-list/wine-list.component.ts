@@ -10,6 +10,8 @@ export class WineListComponent implements OnInit {
 
   public wines;
 
+  searchText = '';
+
   constructor(private _wineService: WineApiService) { }
 
   ngOnInit() {
@@ -22,7 +24,7 @@ export class WineListComponent implements OnInit {
 
   getWine() {
     this._wineService.getWines().subscribe(
-      res => { this.wines = res },
+      res => this.wines = res,
       err => console.error(err),
       () => console.log('wine loaded')
     );

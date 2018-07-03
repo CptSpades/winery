@@ -1,4 +1,5 @@
-<table class="table">
+<input type="text" id="searchTextId" [(ngModel)]="searchText" name="searchText" placeholder="Search By Name">
+<table class="table" *ngIf="wines">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -8,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let wine of wines" routerLink="/wine/{{wine.id}}">
+    <tr *ngFor="let wine of (wines | tableFilter: searchText)" routerLink="/wine/{{wine.id}}">
       <th scope="row">{{wine.id}}</th>
       <td>{{wine.name}}</td>
       <td>{{wine.vineyard}}</td>
