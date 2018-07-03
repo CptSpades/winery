@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Vineyard</th>
+      <th scope="col">Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let wine of wines" routerLink="/wine/{{wine.id}}">
+      <th scope="row">{{wine.id}}</th>
+      <td>{{wine.name}}</td>
+      <td>{{wine.vineyard}}</td>
+      <td>{{wine.year}}</td>
+    </tr>
+  </tbody>
+</table>
