@@ -1,14 +1,12 @@
 
-<div class="container-fluid main-content">
+<div class="container-fluid max-height">
+
     <div class="row nav-bar justify-content-center">
-        <div class="col-md-8 center-block"><a routerLink="wine">Home</a></div>
+    <app-wine-nav></app-wine-nav>
+
     </div>
-    <div class="row">
-        <div class="col-md-4 test">TESTERS</div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-md-8 center-block content-card">
-            <button type="button" class="btn btn-primary" routerLink="newWine">Add Wine</button>
+    <div class="row main-content">
+        <div class="col-md-12">
             <router-outlet></router-outlet>
         </div>
     </div>

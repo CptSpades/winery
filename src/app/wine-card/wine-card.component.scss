@@ -1,0 +1,21 @@
+.wine-card {
+    background-color: #1D1D1D;
+    mix-blend-mode: multiply;
+    height: 200px;
+    transition: 0.2s;
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid white;
+    text-align: right;
+}
+.wine-card:hover {
+    background-color: #EDEDED;
+    .card-title, .card-vineyard, .card-year {
+        color: black;
+    }
+}
+
+.card-title, .card-vineyard, .card-year {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+}

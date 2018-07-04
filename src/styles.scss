@@ -4,3 +4,12 @@ $primary: #19393A;
 $secondary: #1E6E50; 
 
 
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.container {
+    height: 100%;
+}

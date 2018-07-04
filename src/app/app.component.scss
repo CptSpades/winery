@@ -1,23 +1,18 @@
 @import "../styles.scss";
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
 .main-content {
     background: url(../assets/bg.jpg) no-repeat center center fixed; 
-
+    background-attachment: fixed;
     height: 100%;
     min-height: 100%;
 }
 
-.test {
-    background-color: #1D1D1D;
-    mix-blend-mode: multiply;
-    height: 300px;
+.max-height {
+    height: 100%;
 }
+
 
 .nav-bar {
     background: #555555;
 }
-
-.content-card {
-    //background-color: white;
-}
-

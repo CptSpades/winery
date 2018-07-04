@@ -9,6 +9,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { WineListComponent } from './wine-list/wine-list.component';
 import { WineNewComponent } from './wine-new/wine-new.component';
 import { TableFilterPipe } from './table-filter.pipe';
+import { WineCardComponent } from './wine-card/wine-card.component';
+import { WineNavComponent } from './wine-nav/wine-nav.component';
+import { WineCommentsFormComponent } from './wine-comments-form/wine-comments-form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { TableFilterPipe } from './table-filter.pipe';
     WineDetailComponent,
     WineListComponent,
     WineNewComponent,
-    TableFilterPipe
+    TableFilterPipe,
+    WineCardComponent,
+    WineNavComponent,
+    WineCommentsFormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WineApiService } from '../wine-api.service';
 import { Wine } from '../classes/wine';
+import { WineCardComponent } from '../wine-card/wine-card.component';
 
 @Component({
   selector: 'app-wine-list',
@@ -9,7 +10,7 @@ import { Wine } from '../classes/wine';
 })
 export class WineListComponent implements OnInit {
 
-  public wines = [];
+  public wines: Wine[];
 
   searchText = '';
 

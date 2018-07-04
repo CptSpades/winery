@@ -5,5 +5,6 @@ export class Wine {
         public vineyard?: string,
         public year?: number,
         public description?: string,
+        public image?: string,
     ) {}
 }
