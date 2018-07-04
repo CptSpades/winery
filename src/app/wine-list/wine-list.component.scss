@@ -1,1 +1,18 @@
 @import "../../styles.scss";
+
+.search-input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    mix-blend-mode: multiply;
+    color: black;
+    font-size: 20pt;
+}
+
+.sort-items > ul {
+    list-style: none;
+    li {
+        display: inline;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+}

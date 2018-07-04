@@ -1,10 +1,12 @@
 <div *ngIf="wine" class="row detail-content">
-    <div class="col-md-6 detail-border">
+    <div class="col-md-6 detail-border remove-blend">
+        <div class="content-wrapper">
         <h1>{{wine.name}}</h1>
         <h2>{{wine.vineyard}}</h2>
         <h3>{{wine.year}}</h3>
         <span>{{wine.description}}</span>
        <!-- <img src="{{wine.image}}" class="detail-image" alt="{{wine.name}}"> -->
+    </div>
     </div>
     <div class="col-md-6 detail-border">
         <app-wine-comments-form></app-wine-comments-form>

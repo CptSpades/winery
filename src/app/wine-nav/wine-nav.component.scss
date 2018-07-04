@@ -1,0 +1,17 @@
+.nav-bar {
+    background: #1D1D1D;
+    mix-blend-mode: multiply;
+    height: 70px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.nav-items {
+    text-align: right;
+    a {
+        margin-left: 10px;
+        color: white;
+    }
+}

@@ -1,4 +1,14 @@
+<div class="row search-input">
+  <input type="text" class=" col-md-3" id="searchTextId" [(ngModel)]="searchText" name="searchText" placeholder="Search">
+  <span class="col-md-1" href="">Sort by:</span>
+  <span class="col-md-1 sort-items">
+    <ul>
+      <li (click)="sortBy('name')">Name</li>
+      <li (click)="sortBy('vineyard')">Vineyard</li>
+      <li (click)="sortBy('year')">Year</li>
+    </ul>
+  </span>
+</div>
 <div class="row">
   <app-wine-card class="col-md-4 pl-0 pr-0" *ngFor="let wine of (wines | tableFilter: searchText)" routerLink="/wine/{{wine.id}}" [wine]="wine"></app-wine-card>
 </div>
-<input type="text" class="float-right" id="searchTextId" [(ngModel)]="searchText" name="searchText" placeholder="Search">
